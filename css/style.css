@@ -8,6 +8,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
 .raleway{
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -20,4 +23,7 @@
   font-optical-sizing: auto;
   font-weight:weight;
   font-style: normal;
+}
+.common-green-color{
+    color: #1dd100;
 }
