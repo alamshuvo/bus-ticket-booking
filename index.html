@@ -523,8 +523,8 @@
                 </p>
               </div>
               <!-- input coupon applay section -->
-              <div class="flex justify-between items-center my-10">
-                <input
+              <div id="apply-div" class="flex justify-between items-center my-10">
+                <input id="input"
                   class="w-[90%] p-3"
                   type="text"
                   placeholder="please enter your coppon code"
@@ -538,6 +538,15 @@
                   Apply
                 </button>
               </div>
+              <!-- discount price -->
+              <div class="flex justify-between items-center">
+                <p class="font-extrabold text-[#030712] text-[16px]">
+                  Discount Price
+                </p>
+                <p class="font-extrabold text-[#030712] text-[16px]">
+                  BDT <span id="discount-total" class="">0</span>
+                </p>
+              </div>
               <!-- grand total section -->
               <div class="flex justify-between items-center">
                 <p class="font-extrabold text-[#030712] text-[16px]">
@@ -547,7 +556,9 @@
                   BDT <span id="grand-total" class="">0</span>
                 </p>
               </div>
+              
             </div>
+            <!-- input field section -->
             <div class="p-5 lg:p-10 min-h-[70%]">
               <label class="form-control w-full">
                 <div class="label">
@@ -567,7 +578,7 @@
                     >Passenger Number*</span
                   >
                 </div>
-                <input
+                <input id="passenger-number"
                   type="number"
                   placeholder="Enter Your Number"
                   class="input input-bordered w-full"
@@ -588,6 +599,7 @@
               <div class="my-10">
                 <!-- You can open the modal using ID.showModal() method -->
                 <button
+                id="next-btn"
                   class="btn w-full bg-[#1dd100]"
                   onclick="my_modal_4.showModal()"
                   disabled
