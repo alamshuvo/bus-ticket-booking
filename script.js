@@ -4,8 +4,9 @@ let totalPurchaseSeatCount=0;
 let totalPrice=0;
 let totalPricea=0;
 for (const btn of kbd) {
-    
+   
     btn.addEventListener("click",function (e) {
+       e.target.setAttribute("disabled",true);
         const btnInnerText=btn.innerText;
         if (totalPurchaseSeatCount >=4) {
             alert("Dear Passenger You are not able to Buy 4 ticket at a time.");
