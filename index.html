@@ -314,9 +314,7 @@
             <div>
               <!-- first side -->
               <div class="flex justify-end my-5">
-                <kbd class="kbd-1"
-                  ><i class="fa-solid fa-dharmachakra"></i
-                ></kbd>
+                <button class="btn"><img src="./images/Vector.png" alt="" srcset=""></button>
               </div>
               <div class="flex justify-around gap-5 my-5">
                 <div
@@ -478,7 +476,6 @@
                   <kbd class="kbd p-2 lg:p-5 cursor-pointer">J4</kbd>
                 </div>
               </div>
-              
 
               <!-- second side -->
               <div></div>
@@ -523,8 +520,12 @@
                 </p>
               </div>
               <!-- input coupon applay section -->
-              <div id="apply-div" class="flex justify-between items-center my-10">
-                <input id="input"
+              <div
+                id="apply-div"
+                class="flex justify-between items-center my-10"
+              >
+                <input
+                  id="input"
                   class="w-[90%] p-3"
                   type="text"
                   placeholder="please enter your coppon code"
@@ -556,7 +557,6 @@
                   BDT <span id="grand-total" class="">0</span>
                 </p>
               </div>
-              
             </div>
             <!-- input field section -->
             <div class="p-5 lg:p-10 min-h-[70%]">
@@ -578,9 +578,10 @@
                     >Passenger Number*</span
                   >
                 </div>
-                <input id="passenger-number"
+                <input
+                  id="passenger-number"
                   type="number"
-                  placeholder="Enter Your Number"
+                  placeholder="Enter Your Number For open Next button."
                   class="input input-bordered w-full"
                 />
               </label>
@@ -599,7 +600,7 @@
               <div class="my-10">
                 <!-- You can open the modal using ID.showModal() method -->
                 <button
-                id="next-btn"
+                  id="next-btn"
                   class="btn w-full bg-[#1dd100]"
                   onclick="my_modal_4.showModal()"
                   disabled
@@ -607,13 +608,24 @@
                   Next
                 </button>
                 <dialog id="my_modal_4" class="modal">
-                  <div class="modal-box w-11/12 max-w-5xl">
+                  <div
+                    class="modal-box w-full items-center flex justify-center flex-col"
+                  >
+                    <img
+                      class="w-full bg-blue-300 rounded-2xl"
+                      src="./images/success.png"
+                      alt=""
+                      srcset=""
+                    />
                     <h3 class="font-bold text-lg">Congratulations</h3>
+                    <h3 class="font-bold text-lg">
+                      Your Ticket Purchase is Sucessfully Complate.
+                    </h3>
                     <p class="py-4">Click the button below to close</p>
                     <div class="modal-action">
                       <form method="dialog">
                         <!-- if there is a button, it will close the modal -->
-                        <button class="btn">Close</button>
+                        <button class="btn bg-[#1dd100]">Close</button>
                       </form>
                     </div>
                   </div>
