@@ -69,6 +69,7 @@ btn.addEventListener("click",function () {
     // get input field value
     let inputValue=document.getElementById("input").value;
     const convertedInputValuea=inputValue.split(" ").join("").toUpperCase();
+    const convertedInputValueb=inputValue;
     if (totalPurchaseSeatCount===4) {
         if (convertedInputValuea==="NEW15") {
             document.getElementById("apply-div").classList.add("hidden");
@@ -81,7 +82,7 @@ btn.addEventListener("click",function () {
             grandtotal.innerText=discountTotalAmmount;
             inputValue=document.getElementById("input").value="";
         } 
-        else if(convertedInputValuea ==="COUPLE20"){
+        else if(convertedInputValueb === "Couple 20"){
             document.getElementById("apply-div").classList.add("hidden");
             const discount=document.getElementById("discount-total");
             const grandtotal=document.getElementById("grand-total");
