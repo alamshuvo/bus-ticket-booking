@@ -96,7 +96,7 @@ btn.addEventListener("click",function () {
         alert ("please shop atleast 4 seat")
     }
 });
-
+// next button
 const number= document.getElementById("passenger-number");
 number.addEventListener("keyup",function (e) {
     const convertedNumber=number.value;
