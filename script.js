@@ -29,12 +29,6 @@ for (const btn of kbd) {
         if (totalPurchaseSeatCount===4) {
             document.getElementById("coupon-code").removeAttribute("disabled");
         }
-        const number= document.getElementById("passenger-number").value;
-        if (totalPurchaseSeatCount>0 && number.length>0) {
-            document.getElementById("next-btn").removeAttribute("disabled");
-           }
-       
-       
         // total seat decrease
         totalSeatCount=totalSeatCount-1
         const availableSeat=document.getElementById("available-seats");
@@ -101,7 +95,15 @@ btn.addEventListener("click",function () {
     else{
         alert ("please shop atleast 4 seat")
     }
-})
+});
+
+const number= document.getElementById("passenger-number");
+number.addEventListener("keyup",function (e) {
+    const convertedNumber=number.value;
+    if (totalPurchaseSeatCount>0 && convertedNumber.length>0) {
+        document.getElementById("next-btn").removeAttribute("disabled");
+       }
+});
 
 
 
